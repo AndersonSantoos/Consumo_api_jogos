@@ -1,15 +1,18 @@
 const express = require('express');
 const app = express();
-const port = 5000;
+const path = require('path');
+const port = 5000; 
 
-app.use(express.static('public')); // Servir arquivos estáticos da pasta 'public'
+app.use(express.static('public'));
 
-app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/public/login.html'); // Rota para a página de login
+// Rota para a página de login
+app.get('/login', (req, res) => {
+    res.sendFile(path.join(__dirname, '/public/login.html'));
 });
 
+// Rota para a página principal
 app.get('/index', (req, res) => {
-    res.sendFile(__dirname + '/public/index.html'); // Rota para a página principal
+    res.sendFile(path.join(__dirname, '/public/index.html'));
 });
 
 app.listen(port, () => {
