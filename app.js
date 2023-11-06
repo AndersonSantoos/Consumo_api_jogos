@@ -1,31 +1,17 @@
-// Importe as bibliotecas necessárias
 const express = require('express');
-const path = require('path');
 const app = express();
-const port = process.env.PORT || 3000; // Porta do servidor
+const port = process.env.PORT || 3000;
 
-// Middleware para servir arquivos estáticos (HTML, CSS, JavaScript)
-app.use(express.static(path.join(__dirname, 'public')));
-
-// Middleware para analisar o corpo das solicitações
-app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
-
-// Rotas
-app.get('/login', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'login.html'));
-});
+app.use(express.static('public')); // Servir arquivos estáticos da pasta 'public'
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+    res.sendFile(__dirname + '/public/login.html'); // Rota para a página de login
 });
 
+app.get('/index', (req, res) => {
+    res.sendFile(__dirname + '/public/index.html'); // Rota para a página principal
+});
 
-// Lógica de autenticação e proteção de rotas (adicione conforme necessário)
-
-// Outras rotas da sua aplicação
-
-// Inicialização do servidor
 app.listen(port, () => {
-    console.log(`Servidor rodando na porta ${port}`);
+    console.log(`Servidor Express rodando na porta ${port}`);
 });
