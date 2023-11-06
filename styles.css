@@ -1,0 +1,177 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("https://w.forfun.com/fetch/86/864ef939e9e13034fe2dcfb2125e59bc.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+.header {
+    
+    background-color: transparent;  
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    color:black
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary {
+    background: linear-gradient(to right, #007bff, #0056b3);
+    color: #fff;
+}
+
+.btn-secondary {
+    background: linear-gradient(to right, #17a2b8, #117a8b);
+    color: #fff;
+}
+
+.btn-danger {
+    background: linear-gradient(to right, #dc3545, #bd2130);
+    color: #fff;
+}
+
+.btn:hover {
+    background-color: rgba(0, 123, 255, 0.8);
+    transform: translateY(-2px);
+}
+
+
+
+.jogos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.jogo-card {
+    background-color: #fff;
+    border: 2px solid #ffffff77;
+    border-radius: 5px;
+    margin: 50px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s; /* Adiciona uma transição suave */
+    text-align: center; /* Centralize o conteúdo dentro do card */
+    position: relative; /* Para posicionar o botão de forma absoluta */
+}
+
+.jogo-card:hover {
+    transform: scale(1.1) translateY(-5px); /* Aumenta a escala em 10% e move para cima 5px quando hover */
+}
+
+
+.jogo-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px 5px 0 0;
+}
+
+.jogo-dados {
+    padding: 10px;
+    margin-bottom: 40px; /* Adicione margem na parte inferior para evitar sobreposição com o botão */
+}
+
+
+
+.carrinho {
+    
+    margin-top: 20px; /* Adiciona uma margem superior para separar do conteúdo anterior */
+    border-top: 2px dashed #ff0000; /* Adiciona uma borda pontilhada azul */
+    padding-top: 10px; /* Adiciona um espaçamento superior interno para o carrinho */
+}
+
+
+
+#carrinho-list {
+    /* Estilize a lista do carrinho como desejado, por exemplo, adicionando espaçamento interno */
+    padding: 10px;
+}
+
+#carrinho-total {
+    font-weight: bold; /* Faça o total em negrito */
+}
+
+#confirmar-compra {
+    /* Adicione estilos ao botão de confirmar compra, se desejar */
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Estilize a lista de itens do carrinho, se necessário */
+#carrinho-list li {
+    margin: 5px 0; /* Adicione margem entre os itens do carrinho */
+}
+
+.comprar-btn {
+    background-color: #007bff; 
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0; /* Posicione o botão na parte inferior do card */
+    left: 0; /* Centralize o botão horizontalmente */
+    right: 0; 
+}
+
+
+
+
+
+/* Estilo inicialmente oculto para o carrinho */
+.carrinho-hidden {
+    display: none;
+}
+
+/* Estilo para tornar o carrinho visível quando a classe "carrinho-visible" é aplicada */
+.carrinho-visible {
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Jogos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <h1>Loja de Jogos</h1>
+        </div>
+        <div class="buttons">
+            <button class="btn btn-primary" id="inicio-button">Início</button>
+            <div class="dropdown">
+                <button class="btn btn-secondary" id="carrinho-button">Carrinho</button>
+                <div class="dropdown-content">
+                    <ul id="carrinho-list"></ul>
+                    <p>Total: <span id="carrinho-total">R$ 0</span></p>
+                    <button id="confirmar-compra" style="display: none">Confirmar Compra</button>
+                </div>
+            </div>
+            <button class="btn btn-danger" id="sair-button">Sair</button>
+        </div>
+    </div>
+
+    
+
+
+    <div class="jogos-container" id="jogos-container">
+        <!-- Jogos serão carregados dinamicamente aqui -->
+    </div>
+
+    <script src="api.js"></script>
+</body>
+</html>

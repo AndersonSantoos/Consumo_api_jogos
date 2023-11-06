@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url("https://wallpaper.dog/large/991260.jpg ") center/cover no-repeat fixed;
+    animation: backgroundAnimation 15s infinite;
+}
+
+#titulo-login {
+    color: rgb(255, 255, 255);
+}
+
+
+@keyframes backgroundAnimation {
+    0% { background-position: 0 0; }
+    25% { background-position: 100% 0; }
+    50% { background-position: 100% 100%; }
+    75% { background-position: 0 100%; }
+    100% { background-position: 0 0; }
+}
+
+.login-container {
+    background-color: rgba(0, 0, 0, 0.57);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s;
+}
+
+.login-container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333; /* Cor do título */
+}
+
+#login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#login-form input {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333; /* Cor do texto de entrada */
+    transition: border-color 0.3s;
+}
+
+#login-form input::placeholder {
+    color: #999; /* Cor do placeholder */
+}
+
+#login-form input:focus {
+    border-color: #007bff;
+}
+
+#login-form button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#login-form button:hover {
+    background-color: #0056b3;
+}
+
