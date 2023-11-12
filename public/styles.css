@@ -163,26 +163,6 @@ body {
 
 
 
-/* Animação do botão para o carrinho */
-
-@keyframes move-to-cart {
-    0% {
-        transform: translate(0, 0);
-    }
-    100% {
-        transform: translate(0, -100%);
-        opacity: 0;
-    }
-}
-
-
-.jogo-card.add-to-cart-animation {
-    animation: move-to-cart 1s ease-in-out;
-    animation-fill-mode: forwards;
-}
-
-
-
 
 
 

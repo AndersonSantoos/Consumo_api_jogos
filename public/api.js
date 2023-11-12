@@ -149,9 +149,7 @@ fetch('https://api-jogos.onrender.com/')
                 <p>Gênero: ${jogo.genero}</p>
                 <p>Ano de Lançamento: ${jogo.anoLancamento}</p>
                 <p>Preço: ${jogo.preco}</p>
-                <button class="comprar-btn" data-id="${jogo.id} onclick="addToCart(this)">Adicionar ao Carrinho</button>
-
-                // <button class="comprar-btn" data-id="${jogo.id}">Adicionar ao carrinho</button>
+                <button class="comprar-btn" data-id="${jogo.id}">Adicionar ao carrinho</button>
             `;
 
             jogoCard.appendChild(jogoImg);
@@ -178,22 +176,7 @@ fetch('https://api-jogos.onrender.com/')
 
 
 
-    //Adição do botão com animação no adicionar ao carrinho.
 
-    function addToCart(button) {
-        // Adicione a classe de animação ao card do jogo
-        const jogoCard = button.closest('.jogo-card');
-        jogoCard.classList.add('add-to-cart-animation');
-    
-        // Adicione lógica adicional, como adicionar o item ao carrinho, se necessário
-        // ...
-    
-        // Remova a classe de animação após a animação ser concluída (opcional)
-        jogoCard.addEventListener('animationend', () => {
-            jogoCard.classList.remove('add-to-cart-animation');
-        });
-    }
-    
 
 
 
