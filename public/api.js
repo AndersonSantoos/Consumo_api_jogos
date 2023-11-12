@@ -89,7 +89,7 @@ function atualizarCarrinho() {
 
 
 
-//Conttinuação do código de cima. Aqui é configurado a confirmação da compra.
+//Continuação do código de cima. Aqui é configurado a confirmação da compra.
 
 // Adicione um evento de clique ao botão de confirmar compra
 confirmarCompraBtn.addEventListener('click', () => {
@@ -127,7 +127,7 @@ carrinhoList.classList.add('carrinho-hidden');
 
 //========================================================================================
 
-
+// URL da api consumida
 
 fetch('https://api-jogos.onrender.com/')
     .then(response => response.json())
