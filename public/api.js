@@ -129,7 +129,7 @@ carrinhoList.classList.add('carrinho-hidden');
 
 
 
-fetch('https://api-jogos-ugkz.onrender.com/')
+fetch('https://api-jogos.onrender.com/')
     .then(response => response.json())
     .then(data => {
         data.forEach(jogo => {
