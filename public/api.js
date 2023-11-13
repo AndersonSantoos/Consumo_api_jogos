@@ -187,9 +187,6 @@ fetch('https://api-jogos.onrender.com/')
 // ... (seu código existente)
 
 // Adiciona evento de clique ao botão "Carrinho"
-// ... (seu código existente)
-
-// Adiciona evento de clique ao botão "Carrinho"
 
 carrinhoButton.addEventListener('click', () => {
     carrinhoList.classList.toggle('carrinho-visible');
@@ -222,6 +219,9 @@ confirmarCompraBtn.addEventListener('click', () => {
     atualizarCarrinho();
     atualizarExibicaoBotoes();
 });
+
+// ... (seu código existente)
+
 
 // ... (seu código existente)
 
