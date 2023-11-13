@@ -181,49 +181,6 @@ fetch('https://api-jogos.onrender.com/')
 
 
 
-    //=====================================================================
-
-
-// ... (seu código existente)
-
-// Adiciona evento de clique ao botão "Carrinho"
-
-carrinhoButton.addEventListener('click', () => {
-    carrinhoList.classList.toggle('carrinho-visible');
-    atualizarExibicaoBotoes();
-});
-
-// Adiciona evento de clique ao botão esvaziar carrinho
-const esvaziarCarrinhoBtn = document.getElementById('esvaziar-carrinho');
-esvaziarCarrinhoBtn.addEventListener('click', () => {
-    carrinhoItens = {}; // Esvazia o carrinho
-    atualizarCarrinho(); // Atualiza a exibição do carrinho
-    atualizarExibicaoBotoes();
-});
-
-// Adiciona evento de clique ao botão de confirmar compra
-confirmarCompraBtn.addEventListener('click', () => {
-    // Lógica para confirmar a compra
-    
-
-    // Lógica para confirmar a compra (por exemplo, envio de dados para o servidor, etc.)
-
-    // Esvazie o carrinho  // O carrinho é esvaziado após finalizar a compra.
-    carrinhoItens = {};
-    atualizarCarrinho();
-    atualizarExibicaoBotoes();
-});
-
-// Função para atualizar a exibição dos botões Esvaziar Carrinho e Confirmar Compra
-function atualizarExibicaoBotoes() {
-    esvaziarCarrinhoBtn.style.display = Object.keys(carrinhoItens).length > 0 ? 'block' : 'none';
-    confirmarCompraBtn.style.display = Object.keys(carrinhoItens).length > 0 ? 'block' : 'none';
-}
-
-// ... (seu código existente)
-
-
-
 
 
 
