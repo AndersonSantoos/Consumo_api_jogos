@@ -4,6 +4,29 @@ const carrinhoTotal = document.getElementById('carrinho-total');
 const carrinhoItens = {};
 const confirmarCompraBtn = document.getElementById('confirmar-compra');
 
+//==================================================================================================
+
+//Esvaziar carrinho
+
+
+// Adicione um evento de clique ao botão "Esvaziar Carrinho"
+const esvaziarCarrinhoBtn = document.getElementById('esvaziar-carrinho');
+esvaziarCarrinhoBtn.addEventListener('click', () => {
+    // Esvazie o carrinho
+    for (const jogoId in carrinhoItens) {
+        if (carrinhoItens.hasOwnProperty(jogoId)) {
+            delete carrinhoItens[jogoId];
+        }
+    }
+    
+    // Atualize a exibição do carrinho
+    atualizarCarrinho();
+});
+
+
+
+
+//==================================================================================================
 
 //Config botão de início e botão sair
 

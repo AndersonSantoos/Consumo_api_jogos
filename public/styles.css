@@ -164,6 +164,19 @@ body {
 
 
 
+#esvaziar-carrinho {
+    /* Adicione estilos ao botão de esvaziar carrinho, se desejar (pode usar o mesmo estilo do confirmar compra) */
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px; /* Adicione margem superior para separar do restante dos elementos do carrinho */
+}
+
+
+
+
 
 
 
