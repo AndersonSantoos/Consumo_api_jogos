@@ -202,17 +202,7 @@ esvaziarCarrinhoBtn.addEventListener('click', () => {
         }
     }
     atualizarCarrinho(); // Atualiza a exibição do carrinho
-    atualizarExibicaoBotoes(); // Atualiza a exibição dos botões
 });
-
-// Atualiza a exibição dos botões na carga inicial
-atualizarExibicaoBotoes();
-
-// Função para atualizar a exibição dos botões Esvaziar Carrinho e Confirmar Compra
-function atualizarExibicaoBotoes() {
-    esvaziarCarrinhoBtn.style.display = Object.keys(carrinhoItens).length > 0 ? 'block' : 'none';
-    confirmarCompraBtn.style.display = Object.keys(carrinhoItens).length > 0 ? 'block' : 'none';
-}
 
 // ... (seu código existente)
 
