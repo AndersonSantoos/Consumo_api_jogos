@@ -39,10 +39,6 @@ body {
     text-transform: uppercase;
     transition: background-color 0.3s, transform 0.2s;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-
-
-
-    margin: 0;
 }
 
 .btn-primary {
@@ -123,6 +119,14 @@ body {
     font-weight: bold; /* Faça o total em negrito */
 }
 
+#confirmar-compra {
+    /* Adicione estilos ao botão de confirmar compra, se desejar */
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
 
 /* Estilize a lista de itens do carrinho, se necessário */
 #carrinho-list li {
@@ -158,29 +162,6 @@ body {
 }
 
 
-
-
-
-
-/* Adicione o estilo ao botão esvaziar carrinho */
-#esvaziar-carrinho {
-    background-color: #dc3545;
-    color: #fff;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-    text-align: center;
-    width: 100%;
-}
-
-#esvaziar-carrinho:hover {
-    background-color: #bd2130;
-}
-
-/* Estilo para exibir o botão esvaziar carrinho apenas quando o carrinho não estiver vazio */
-#esvaziar-carrinho {
-    display: none;
-}
 
 
 
