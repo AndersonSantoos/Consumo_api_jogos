@@ -6,11 +6,6 @@ const confirmarCompraBtn = document.getElementById('confirmar-compra');
 
 //==================================================================================================
 
-//Esvaziar carrinho
-
-
-
-//==================================================================================================
 
 //Config botão de início e botão sair
 
@@ -178,6 +173,34 @@ fetch('https://api-jogos.onrender.com/')
         });
     })
     .catch(error => console.error('Erro ao buscar os dados da API:', error));
+
+
+
+    //=====================================================================
+
+
+    // ... (seu código existente)
+
+// Adiciona evento de clique ao botão "Carrinho"
+carrinhoButton.addEventListener('click', () => {
+    carrinhoList.classList.toggle('carrinho-visible');
+    atualizarExibicaoBotaoEsvaziar(); // Adicionado para garantir que o botão seja exibido corretamente
+});
+
+// Adiciona evento de clique ao botão esvaziar carrinho
+const esvaziarCarrinhoBtn = document.getElementById('esvaziar-carrinho');
+esvaziarCarrinhoBtn.addEventListener('click', () => {
+    carrinhoItens = {}; // Esvazia o carrinho
+    atualizarCarrinho(); // Atualiza a exibição do carrinho
+});
+
+// Função para atualizar a exibição do botão Esvaziar Carrinho
+function atualizarExibicaoBotaoEsvaziar() {
+    esvaziarCarrinhoBtn.style.display = Object.keys(carrinhoItens).length > 0 ? 'block' : 'none';
+}
+
+// ... (seu código existente)
+
 
 
 

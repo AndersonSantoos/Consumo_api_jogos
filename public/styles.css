@@ -168,6 +168,27 @@ body {
 
 
 
+/* ... (seu código existente) */
+
+#esvaziar-carrinho {
+    /* Adicione estilos ao botão Esvaziar Carrinho, semelhante ao Confirmar Compra */
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* ... (seu código existente) */
+
+
+
+
+
+
+
+
+
 
 
 
