@@ -28,6 +28,10 @@ body {
 .buttons {
     display: flex;
     gap: 10px;
+
+
+
+    align-items: center; 
 }
 
 .btn {
@@ -39,6 +43,10 @@ body {
     text-transform: uppercase;
     transition: background-color 0.3s, transform 0.2s;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+
+
+    margin: 0;
 }
 
 .btn-primary {
@@ -119,13 +127,14 @@ body {
     font-weight: bold; /* Faça o total em negrito */
 }
 
-#confirmar-compra {
-    /* Adicione estilos ao botão de confirmar compra, se desejar */
+#confirmar-compra,
+#esvaziar-carrinho {
     background-color: #007bff;
     color: #fff;
     padding: 10px;
     border: none;
     cursor: pointer;
+    display: none; /* Inicialmente, esconda ambos os botões */
 }
 
 /* Estilize a lista de itens do carrinho, se necessário */
@@ -171,7 +180,12 @@ body {
     padding: 10px;
     border: none;
     cursor: pointer;
-    margin-top: 10px; /* Adicione margem superior para separar do restante dos elementos do carrinho */
+
+
+
+    
+    margin-left: 10px;
+    /* margin-top: 10px;  */
 }
 
 
