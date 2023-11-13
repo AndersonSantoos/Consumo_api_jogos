@@ -82,11 +82,11 @@ function atualizarCarrinho() {
 
     carrinhoTotal.textContent = `R$ ${total.toFixed(2)}`;
 
-    if (Object.keys(carrinhoItens).length > 0) {
-        confirmarCompraBtn.style.display = 'block';
-    } else {
-        confirmarCompraBtn.style.display = 'none';
-    }
+    // Controle da exibição do botão "Esvaziar Carrinho"
+    esvaziarCarrinhoBtn.style.display = Object.keys(carrinhoItens).length > 0 ? 'block' : 'none';
+
+    // Controle da exibição do botão "Confirmar Compra"
+    confirmarCompraBtn.style.display = Object.keys(carrinhoItens).length > 0 ? 'block' : 'none';
 }
 
 
