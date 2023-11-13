@@ -201,16 +201,10 @@ esvaziarCarrinhoBtn.addEventListener('click', () => {
     atualizarExibicaoBotoes();
 });
 
-// Função para atualizar a exibição dos botões Esvaziar Carrinho e Confirmar Compra
-function atualizarExibicaoBotoes() {
-    esvaziarCarrinhoBtn.style.display = Object.keys(carrinhoItens).length > 0 ? 'block' : 'none';
-    confirmarCompraBtn.style.display = Object.keys(carrinhoItens).length > 0 ? 'block' : 'none';
-}
-
 // Adiciona evento de clique ao botão de confirmar compra
 confirmarCompraBtn.addEventListener('click', () => {
     // Lógica para confirmar a compra
-    alert('Compra finalizada! Obrigado por comprar os jogos.');
+    
 
     // Lógica para confirmar a compra (por exemplo, envio de dados para o servidor, etc.)
 
@@ -220,10 +214,14 @@ confirmarCompraBtn.addEventListener('click', () => {
     atualizarExibicaoBotoes();
 });
 
+// Função para atualizar a exibição dos botões Esvaziar Carrinho e Confirmar Compra
+function atualizarExibicaoBotoes() {
+    esvaziarCarrinhoBtn.style.display = Object.keys(carrinhoItens).length > 0 ? 'block' : 'none';
+    confirmarCompraBtn.style.display = Object.keys(carrinhoItens).length > 0 ? 'block' : 'none';
+}
+
 // ... (seu código existente)
 
-
-// ... (seu código existente)
 
 
 
