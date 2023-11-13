@@ -162,6 +162,25 @@ body {
 
 
 
+/* Adicione o estilo ao botão esvaziar carrinho */
+#esvaziar-carrinho {
+    background-color: #dc3545;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+}
+
+#esvaziar-carrinho:hover {
+    background-color: #bd2130;
+}
+
+/* Estilo para exibir o botão esvaziar carrinho apenas quando o carrinho não estiver vazio */
+#esvaziar-carrinho {
+    display: none;
+}
 
 
 
