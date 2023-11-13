@@ -8,26 +8,19 @@ const confirmarCompraBtn = document.getElementById('confirmar-compra');
 
 //Esvaziar carrinho
 
-// Adiciona evento de clique ao botão esvaziar carrinho
-esvaziarCarrinhoBtn.addEventListener('click', () => {
-    carrinhoItens = {}; // Esvazia o carrinho
-    atualizarCarrinho(); // Atualiza a exibição do carrinho
-});
-
-// Função para atualizar a exibição do botão esvaziar carrinho
-function atualizarExibicaoBotaoEsvaziar() {
-    const exibirBotaoEsvaziar = Object.keys(carrinhoItens).length > 0;
-    esvaziarCarrinhoBtn.style.display = exibirBotaoEsvaziar ? 'inline-block' : 'none';
-}
-
-// ... (seu código existente)
-
 // Adiciona evento de clique ao botão "Carrinho"
+
 carrinhoButton.addEventListener('click', () => {
     carrinhoList.classList.toggle('carrinho-visible');
     atualizarExibicaoBotaoEsvaziar(); // Adicionado para garantir que o botão seja exibido corretamente
 });
 
+// Adiciona evento de clique ao botão esvaziar carrinho
+const esvaziarCarrinhoBtn = document.getElementById('esvaziar-carrinho');
+esvaziarCarrinhoBtn.addEventListener('click', () => {
+    carrinhoItens = {}; // Esvazia o carrinho
+    atualizarCarrinho(); // Atualiza a exibição do carrinho
+});
 
 
 
