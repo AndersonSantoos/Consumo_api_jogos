@@ -9,36 +9,6 @@ const confirmarCompraBtn = document.getElementById('confirmar-compra');
 //Esvaziar carrinho
 
 
-// Adicione um evento de clique ao botão "Esvaziar Carrinho"
-esvaziarCarrinhoBtn.addEventListener('click', () => {
-    // Esvazie o carrinho
-    for (const jogoId in carrinhoItens) {
-        if (carrinhoItens.hasOwnProperty(jogoId)) {
-            delete carrinhoItens[jogoId];
-        }
-    }
-    
-    // Atualize a exibição do carrinho e do botão "Esvaziar Carrinho"
-    atualizarCarrinho();
-    atualizarExibicaoBotaoEsvaziar();
-});
-
-// Atualize a exibição do botão "Esvaziar Carrinho" com base na presença de itens no carrinho
-function atualizarExibicaoBotaoEsvaziar() {
-    const exibirBotaoEsvaziar = Object.keys(carrinhoItens).length > 0;
-    esvaziarCarrinhoBtn.style.display = exibirBotaoEsvaziar ? 'inline-block' : 'none';
-}
-
-// Após o loop que cria os elementos do jogo, adicione:
-atualizarExibicaoBotaoEsvaziar();
-
-// Adicione um evento de clique ao botão "Carrinho"
-carrinhoButton.addEventListener('click', () => {
-    carrinhoList.classList.toggle('carrinho-visible');
-});
-
-// Adicione uma classe inicialmente oculta para o carrinho
-carrinhoList.classList.add('carrinho-hidden');
 
 
 

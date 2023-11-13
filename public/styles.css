@@ -28,10 +28,6 @@ body {
 .buttons {
     display: flex;
     gap: 10px;
-
-
-
-    align-items: center; 
 }
 
 .btn {
@@ -127,15 +123,6 @@ body {
     font-weight: bold; /* Faça o total em negrito */
 }
 
-#confirmar-compra,
-#esvaziar-carrinho {
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-    display: none; /* Inicialmente, esconda ambos os botões */
-}
 
 /* Estilize a lista de itens do carrinho, se necessário */
 #carrinho-list li {
@@ -173,20 +160,6 @@ body {
 
 
 
-#esvaziar-carrinho {
-    /* Adicione estilos ao botão de esvaziar carrinho, se desejar (pode usar o mesmo estilo do confirmar compra) */
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-
-
-
-    
-    margin-left: 10px;
-    /* margin-top: 10px;  */
-}
 
 
 
