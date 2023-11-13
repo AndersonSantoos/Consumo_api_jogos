@@ -176,15 +176,21 @@ fetch('https://api-jogos.onrender.com/')
 
 
 
+
+
+
+
+
     //=====================================================================
 
 
-    // ... (seu código existente)
+// ... (seu código existente)
 
 // Adiciona evento de clique ao botão "Carrinho"
+
 carrinhoButton.addEventListener('click', () => {
     carrinhoList.classList.toggle('carrinho-visible');
-    atualizarExibicaoBotaoEsvaziar(); // Adicionado para garantir que o botão seja exibido corretamente
+    atualizarExibicaoBotaoEsvaziar();
 });
 
 // Adiciona evento de clique ao botão esvaziar carrinho
@@ -199,7 +205,20 @@ function atualizarExibicaoBotaoEsvaziar() {
     esvaziarCarrinhoBtn.style.display = Object.keys(carrinhoItens).length > 0 ? 'block' : 'none';
 }
 
+// Adiciona evento de clique ao botão de confirmar compra
+confirmarCompraBtn.addEventListener('click', () => {
+    // Lógica para confirmar a compra
+    alert('Compra finalizada! Obrigado por comprar os jogos.');
+
+    // Lógica para confirmar a compra (por exemplo, envio de dados para o servidor, etc.)
+
+    // Esvazie o carrinho  // O carrinho é esvaziado após finalizar a compra.
+    carrinhoItens = {};
+    atualizarCarrinho();
+});
+
 // ... (seu código existente)
+
 
 
 
