@@ -91,39 +91,39 @@ function atualizarCarrinho() {
 
 
 
-//Continuação do código de cima. Aqui é configurado a confirmação da compra.
+// Continuação do código de cima. Aqui é configurado a confirmação da compra.
 
-// // Adicione um evento de clique ao botão de confirmar compra
-// confirmarCompraBtn.addEventListener('click', () => {
-//     // Lógica para confirmar a compra
-//     alert('Compra finalizada! Obrigado por comprar os jogos.');
-//     // Adicione um evento de clique ao botão de confirmar compra
+// Adicione um evento de clique ao botão de confirmar compra
+confirmarCompraBtn.addEventListener('click', () => {
+    // Lógica para confirmar a compra
+    alert('Compra finalizada! Obrigado por comprar os jogos.');
+    // Adicione um evento de clique ao botão de confirmar compra
 
-//     // Lógica para confirmar a compra (por exemplo, envio de dados para o servidor, etc.)
+    // Lógica para confirmar a compra (por exemplo, envio de dados para o servidor, etc.)
 
-//     // Esvazie o carrinho  // O carrinho é esvaziado após finalizar a compra.
-//     for (const jogoId in carrinhoItens) {
-//         if (carrinhoItens.hasOwnProperty(jogoId)) {
-//             delete carrinhoItens[jogoId];
-//         }
-//     }
+    // Esvazie o carrinho  // O carrinho é esvaziado após finalizar a compra.
+    for (const jogoId in carrinhoItens) {
+        if (carrinhoItens.hasOwnProperty(jogoId)) {
+            delete carrinhoItens[jogoId];
+        }
+    }
     
-//     // Atualize a exibição do carrinho
-//     atualizarCarrinho();
+    // Atualize a exibição do carrinho
+    atualizarCarrinho();
 
 
-// });
+});
 
 
 
-// // Adicione um evento de clique ao botão "Carrinho"
-// const carrinhoButton = document.getElementById('carrinho-button');
-// carrinhoButton.addEventListener('click', () => {
-//     carrinhoList.classList.toggle('carrinho-visible');
-// });
+// Adicione um evento de clique ao botão "Carrinho"
+const carrinhoButton = document.getElementById('carrinho-button');
+carrinhoButton.addEventListener('click', () => {
+    carrinhoList.classList.toggle('carrinho-visible');
+});
 
-// // Adicione uma classe inicialmente oculta para o carrinho
-// carrinhoList.classList.add('carrinho-hidden');
+// Adicione uma classe inicialmente oculta para o carrinho
+carrinhoList.classList.add('carrinho-hidden');
 
 
 
@@ -176,43 +176,6 @@ fetch('https://api-jogos.onrender.com/')
 
 
 
-
-
-
-
-
-    // Adiciona evento de clique ao botão "Carrinho"
-const carrinhoButton = document.getElementById('carrinho-button');
-carrinhoButton.addEventListener('click', () => {
-    carrinhoList.classList.toggle('carrinho-visible');
-});
-
-// Adiciona evento de clique ao botão esvaziar carrinho
-const esvaziarCarrinhoBtn = document.getElementById('esvaziar-carrinho');
-esvaziarCarrinhoBtn.addEventListener('click', () => {
-    carrinhoItens = {}; // Esvazia o carrinho
-    atualizarCarrinho(); // Atualiza a exibição do carrinho
-    atualizarExibicaoBotoes(); // Atualiza a exibição dos botões
-});
-
-// Adiciona evento de clique ao botão de confirmar compra
-confirmarCompraBtn.addEventListener('click', () => {
-    // Lógica para confirmar a compra
-    alert('Compra finalizada! Obrigado por comprar os jogos.');
-
-    // Lógica para confirmar a compra (por exemplo, envio de dados para o servidor, etc.)
-
-    // Esvazie o carrinho  // O carrinho é esvaziado após finalizar a compra.
-    carrinhoItens = {};
-    atualizarCarrinho();
-    atualizarExibicaoBotoes(); // Atualiza a exibição dos botões
-});
-
-// Função para atualizar a exibição dos botões Esvaziar Carrinho e Confirmar Compra
-function atualizarExibicaoBotoes() {
-    esvaziarCarrinhoBtn.style.display = Object.keys(carrinhoItens).length > 0 ? 'block' : 'none';
-    confirmarCompraBtn.style.display = Object.keys(carrinhoItens).length > 0 ? 'block' : 'none';
-}
 
 
 
